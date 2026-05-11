@@ -2,7 +2,7 @@ sequenceDiagram
   participant browser
   participant server
   /*L'utilisateur écrit dans le champs text et clique sur "Envoyer".
-  spa.js intercepte l'évenement et empêche le rechargement de la page.*/
+  spa.js intercepte l'évenement et empêche le rechargement de la page (à l'aide de preventDefault).*/
   
   browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
   activate server
